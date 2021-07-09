@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block head %} {% endblock %} {% block body %}
+<h1>Fat-payload Generator</h1>
+<form action="/" method="POST" id="form1">
+  <input type="radio" id="identify" name="call" value="identify" />
+  <label for="identify">Identify</label><br />
+  <input type="radio" id="track" name="call" value="track" />
+  <label for="track">Track</label><br />
+  <input type="radio" id="page" name="call" value="page" />
+  <label for="page">Page</label>
+  <input type="radio" id="screen" name="call" value="screen" />
+  <label for="screen">Screen</label>
+  <input type="radio" id="group" name="call" value="group" />
+  <label for="group">Group</label>
+  <input type="radio" id="alias" name="call" value="alias" />
+  <label for="alias">Alias</label>
+
+  <h2>Enter payload</h2>
+  <textarea name="payload" style="width: 250px; height: 150px" id="payload">
+{{data}}</textarea
+  >
+  <input type="text" id="calltype" name="calltype" value="{{data1}}" />
+  <h2>Enter Writekey</h2>
+  <input type="text" name="Writekey" id="Writekey" required />
+  <h2>Enter size of users to be created randomly</h2>
+  <input type="text" name="size" required value="0" />
+  <input type="submit" value="Submit" />
+</form>
+{% endblock %}
