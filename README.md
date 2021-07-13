@@ -11,3 +11,41 @@ Clone this repository in a directory and run the following commands
 Then open "localhost:5000" in browser.
 (Before submitting run rudder-server and rudder-transformer locally.)
 
+![alt text](https://github.com/ItsSudip/fatpayload_generator_rudderstack/blob/main/assets/Screenshot%202021-07-09%20at%204.22.10%20PM.png?raw=true)
+
+I have created the testing for track call with "userListDelete" and "userListAdd" in properties for facebook custom audience only. <br/>
+So for a successfull call with random users you have to provide the following payload:
+## userListAdd:
+```javascript
+{
+    "userId": "user123",
+    "event": "Product Purchased",
+    "properties": {
+        "name": "Rubik's Cube",
+        "revenue": 4.99,
+        "userListAdd": [
+        ]
+    },
+    "context": {
+        "ip": "14.5.67.21"
+    },
+    "timestamp": "2020-02-02T00:23:09.544Z"
+}
+```
+## userListDelete:
+```javascript
+{
+    "userId": "user123",
+    "event": "Product Purchased",
+    "properties": {
+        "name": "Rubik's Cube",
+        "revenue": 4.99,
+        "userListDelete": [
+        ]
+    },
+    "context": {
+        "ip": "14.5.67.21"
+    },
+    "timestamp": "2020-02-02T00:23:09.544Z"
+}
+```
