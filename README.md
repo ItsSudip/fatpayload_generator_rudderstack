@@ -13,7 +13,7 @@ Then open "localhost:5000" in browser.
 
 ![alt text](https://github.com/ItsSudip/fatpayload_generator_rudderstack/blob/main/assets/Screenshot%202021-07-09%20at%204.22.10%20PM.png?raw=true)
 
-I have created the testing for track call with "userListDelete" and "userListAdd" in properties for facebook custom audience only. <br/>
+I have created the testing for track call with <b>"userListDelete"</b> and <b>"userListAdd"</b> in properties for <b>facebook custom audience</b> only. <br/>
 So for a successfull call with random users you have to provide the following payload:
 ## userListAdd:
 ```javascript
@@ -49,3 +49,7 @@ So for a successfull call with random users you have to provide the following pa
     "timestamp": "2020-02-02T00:23:09.544Z"
 }
 ```
+<h3>After a successfull submission the result will be something like that:</h3>
+
+![alt text](https://github.com/ItsSudip/fatpayload_generator_rudderstack/blob/main/assets/Screenshot%202021-07-15%20at%2011.32.51%20AM.png?raw=true)
+
